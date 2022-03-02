@@ -1,113 +1,357 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    line-height: 27px;
-
+html {
+    scroll-behavior: smooth;
 }
 
-*, *:before, *:after  {
-    box-sizing: border-box;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.15em;
 }
 
 .header {
-    /*position: absolute;*/
-    width: 100%;
-    max-width: 1920px;
-    height: 146px;
-    margin: 0 auto;
-    top: 0;
-    background: #797979;
+    background-color: #6A6A6A;
 }
 
-
-
-
-.header_container {
-    width: 100%;
-    max-width: 1782px;
+.container {
+    width: 1270px;
     margin: 0 auto;
+}
+
+.wrap {
     display: flex;
     justify-content: space-between;
-    
+    padding: 77px 0;
 }
 
-.header__social {
-    margin-left: 68px;
-    display: flex;
-    width: 78px;
-    height: 24;
-    justify-content: space-between;
-    margin-top: 61px;
+a {
+    text-decoration: none;
 }
 
-.socic {
-    width: 22px;
+.social {
+    padding-top: 13px;
+    height: 22px;
 }
 
-
-
-
-.header_nav {
-    margin-right: 70px;
-    margin-top: 52px;
-    
-
+.vk {
+    padding-right: 32px;
 }
 
-.head_nav {
+.logo {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.69em;
+    margin-left: 39px;    
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.nav {
     position: relative;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.2em;
+    font-size: 15px;
 }
 
-
-
-.head_nav:not(:last-child) {
-    margin-right: 40px;
+.nav:not(:last-child){
+    margin-right: 60px;
+    font-weight: 400;
 }
 
-.head_nav:after {
+.nav:after {
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
-    
+    height: 1px;    
     background-color: #fff;
     opacity: 0;
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     z-index: 10;
     transition: opacity 0.3s linear;
 }
 
-.head_nav:hover::after {
+.nav:hover::after {
     opacity: 1;
 }
 
-.name {
-
+.about, .services, .lets_work{
+    background-color: #181818;
     
-    padding-top: 35px;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 72px;
-    /* identical to box height */
+    /* color: #000; */
+}
+
+.about .container {
+    padding-top: 150px;
+}
+
+.wraper {
+    padding-left: 100px;
+    background-color: #6A6A6A;
+    width: 580px;
+}
+
+.about_wrap {    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+
+}
+
+.about_me {
+    padding-top: 150px;
+    
+}
+
+
+.about_me_par {
+    width: 378px;
+    padding-top: 50px;
+    
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
     color: #fff;
-    letter-spacing: 0.4em;
+    background-color: #181818;
+    display: block;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #313131;
+}
+
+.sevice_wrap {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_service {
+    width: 280px;
+}
+
+h3.service {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    padding-top: 40px;
+}
+
+p.service {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.15em;
+}
+
+.portrait p, .retushe p {
+    padding-top: 85px;
+    width: 187px;
+}
+
+.objects p, .report p {
+    width: 238px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.lets_work {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#181818+0,181818+15,616161+15,616161+85,181818+85,181818+100 */
+    background: rgb(24,24,24); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(24,24,24,1) 0%, rgba(24,24,24,1) 10.7%, rgba(97,97,97,1) 10.7%, rgba(97,97,97,1) 89.3%, rgba(24,24,24,1) 89.3%, rgba(24,24,24,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(24,24,24,1) 0%,rgba(24,24,24,1) 10.7%,rgba(97,97,97,1) 10.7%,rgba(97,97,97,1) 89.3%,rgba(24,24,24,1) 89.3%,rgba(24,24,24,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(24,24,24,1) 0%,rgba(24,24,24,1) 10.7%,rgba(97,97,97,1) 10.7%,rgba(97,97,97,1) 89.3%,rgba(24,24,24,1) 89.3%,rgba(24,24,24,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+
+}
+
+.work_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    width: 580px;
+}
+
+.work {
+    margin-top: 89px;
+    width: 580px;
+    height: 379px;
+    background-color: #181818;
+    text-align: right;
+    padding-right: 53px;
+    
+    
+}
+
+.work_h2 {
+    padding-top: 42px;    
+}
+
+.work_par {
+    margin-left: 93px;
+    padding-top: 50px;
+    width: 433px;
+}
+
+.work_button{
+    background-color: #6A6A6A;
+    width: 180;
+    height: 49px;
+    margin-left: 346px;
+}
+
+.feedback {
+    background-color: #181818;
+    padding: 124px 0;
+}
+
+.feedback_title {
     text-align: center;
 }
 
-.main_container {
+.feedback_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 124px;
+    min-width: 1290px;
     width: 100%;
-    max-width: 1920px;
-    height: 100vh;
-    margin: 0 auto;
-    top: 0;
-    background: #292929;
+    position: relative;
 }
+
+.feedback_wrap .feedback_main p {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.feedback_main {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.name {
+    text-align: right;
+    padding-top: 31px;
+}
+
+.arrow {
+    padding-top: 26px;
+}
+
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.submit{
+    background: #181818; /* Old browsers */
+    background: -moz-linear-gradient(top, #616161 90%, #181818 10%, #181818 10%); /* FF3.6+ */
+    background: -webkit-gradient(linear, top top, top bottom, color-stop(90%,#616161), color-stop(10%,#181818), color-stop(10%,#181818)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #616161 90%,#181818 10%,#181818 10%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #616161 90%,#181818 10%,#181818 10%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #616161 90%,#161616 10%,#181818 10%); /* IE10+ */
+    background: linear-gradient(to bottom, #616161 90%,#181818 10%,#181818 10%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#616161', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    color: #000;
+}
+
+.subm_title {
+    padding-top: 50px;
+}
+
+.sub_wrap {
+    max-width: 1279px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 150px 0;
+    background-color: #181818;
+}
+
+.links, .footer_links, .footer_social {
+    display: flex;
+    
+}
+
+.footer_links {
+    width: 392px;
+}
+
+.footer_contacts {
+    padding-left: 93px;
+}
+
+.footer_links a {
+    color: #BCBCBC;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+}
+
+.footer_social {
+    width: 108px;
+    padding-left: 167px;
+    
+}
+
+.footer_social a img {
+    height: 32px;
+    
+}
+
+.footer_social {
+    text-decoration: none;
+}
+
+.footer_social .vk {
+    padding-right: 53px;
+}
+
+.created {
+    padding-left: 553px;
+    color: #BCBCBC;
+}
+
+/* 280 470 */

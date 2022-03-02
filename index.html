@@ -3,37 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>PhobosPhoto</title>
+    <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="header_container">
-            <div class="header__social">
-                <a href="#" class="social_inst">
-                    <img src="img/instagram.svg" class="socic" alt="instagram">
-                </a>
-                <a href="#" class="social_vk">
-                   <img src="img/vk.svg"  class="socic" alt="vk">
-                </a>                
-            </div>
-            <div class="name">ПАВЕЛ СТРАХОВ</div>
-            <div class="header_nav">
-                <a href="#" class="head_nav">Главная</a>
-                <a href="#" class="head_nav">Инфо</a>
-                <a href="#" class="head_nav">Работы</a>
-                <a href="#" class="head_nav">Контакты</a>
-            </div>
-        </div>               
+        <div class="container">
+            <div class="wrap">
+                <div class="social">
+                    <a href="#" class="vk">
+                        <img src="img/vk.svg" alt="vk">
+                    </a>
+                    <a href="#" class="insta">
+                        <img src="img/instagram.svg" alt="instagram">
+                    </a>                    
+                </div> 
+                <h1 class="logo">ПАВЕЛ СТРАХОВ</h1>               
+                <div class="navigation">
+                    <a href="#about" class="nav">
+                        Главная
+                    </a>
+                    <a href="#services" class="nav">
+                        Услуги
+                    </a>
+                    <a href="#" class="nav">
+                        Портфолио
+                    </a>
+                    <a href="#contacts" class="nav">
+                        Контакты
+                    </a>
+                </div>
+            </div>            
+        </div>        
     </header>
-    <div class="main_container">
-        
-    </div>
-     
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about_wrap">
+                <div class="wraper">
+                    <h2 class="about_me">
+                        ОБО МНЕ
+                    </h2>
+                    <p class="about_me_par">
+                        Меня зовут Павел.<br>Я начал заниматься фотографией еще в 2010 году в качестве хобби.<br>
+                        На данный момент уже 6 лет занимаюсь съемкой профессионально.
+                    </p>
+                    <a href="#" class="button">
+                        Связаться
+                    </a>
+                </div>
+                <img src="img/me.jpg" alt="my_photo" class="my_photo">
+            </div>            
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="sevice_wrap">
+                <div class="portrait" class="block_service">
+                    <img src="img/portrait.jpg" alt="portrait">
+                    <h3 class="service">
+                        Портреты
+                    </h3>
+                    <p class="service">
+                        Съемка людей в студии и на природе
+                    </p>
+                </div>
+                <div class="objects block_service">
+                    <img src="img/objects.jpg" alt="objects">
+                    <h3 class="service">
+                        Предметная съемка
+                    </h3>
+                    <p class="service">
+                        Фотографии предметов и одежды для интернет-магазинов
+                    </p>
+                </div>
+                <div class="report block_service">
+                    <img src="img/report.jpg" alt="report">
+                    <h3 class="service">
+                        Репортажная фотография
+                    </h3>
+                    <p class="service">
+                        Фотографии со спортивных, культурных и других мероприятий
+                    </p>
+                </div>
+                <div class="retushe block_service">
+                    <img src="img/retush.jpg" alt="retush">
+                    <h3 class="service">
+                        Ретушь
+                    </h3>
+                    <p class="service">
+                        Обработка фотографий
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section class="lets_work" id="contacts"> 
+        <div class="container">
+            <div class="work_wrap">
+                <img src="img/Group 1.png" alt="first" class="first">
+            <div class="work">
+                <h2 class="work_h2">
+                    ПОРАБОТАЕМ ВМЕСТЕ
+                </h2>
+                <p class="work_par">
+                    Если вы хотите провести фотосессию, заказать профессиональную съемку товаров для вашего магазина, запечатлить соревнования или другие мероприятия, свяжитесь со мной.
+                </p>
+                <a href="#" class="button work_button">
+                    Связаться
+                </a>
+             </div>
+            </div>            
+        </div>              
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <h3 class="feedback_title">
+                Что говорят мои клиенты
+            </h3>
+            <div class="feedback_wrap">
+                <a onclick="previousSlide()" class="arrow">
+                    <img src="img/left.svg" alt="arrow" class="arrow_left">
+                </a>
+                <div class="feedback_main">
+                    <p>
+                        "Паш, привет! Только что досмотрели фотографии!!! Они просто бомбические!!! Оооочннь понравилось!!!! Мы в восторге!! Спасибо тебе большое еще раз!"
+                    </p>
+                    <p class="name">
+                        Светлана
+                    </p>
+                </div>
+                <div class="feedback_main">
+                    <p>
+                        "Привет, только недавно довелось фотографии загрузить, это просто самые чудесные фотографии:) такая красота получилась! Сбосибо еще раз большое!:)"
+                    </p>
+                    <p class="name">
+                        Елена
+                    </p>
+                </div>
+                <div class="feedback_main">
+                    <p>
+                        "Доброго дня, огромное спасибо Павел! Отличные фото, все как и хотели. Еще раз огромное спасибо ;)"
+                    </p>
+                    <p class="name">
+                        Андрей
+                    </p>
+                </div>
+                <a onclick="nextSlide()" class="arrow">
+                    <img src="img/right.svg" alt="arrow" class="arrow_right">
+                </a>
+            </div>            
+        </div>
+    </section>
+    <section class="submit">
+        <div class="container">
+            <h3 class="subm_title">
+                Подпишись на меня @pavel_strahov
+            </h3>
+            <div class="sub_wrap">
+                <img src="img/fly-girl.jpg" alt="fly_gyrl">
+                <img src="img/botl.jpg" alt="botl">
+                <img src="img/old.jpg" alt="old">
+                <img src="img/man.jpg" alt="man">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <div class="footer_links">
+                    <a href="#services" class="footer_services">Услуги</a>
+                    <a href="#contacts" class="footer_contacts">Контакты</a>
+                </div>
+                <div class="footer_social">
+                    <a href="#" class="vk">
+                        <img src="img/vk.svg" alt="vk">
+                    </a>
+                    <a href="#" class="insta">
+                        <img src="img/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <p class="created">created by PlishArt</p>
+            </div>            
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
